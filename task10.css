@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    height: 350px;
+    border-top: 1px solid lightgray;
+    margin: 50px;
+}
+
+.name {
+    position: absolute;
+    top: -15px; 
+    left: 40%;
+    margin: 0;
+    padding: 0 5px;
+    background-color: white; 
+    color: gray;
+    font-size: 14px;
+}
+
+.left {
+    flex:2;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.left img {
+    position: relative;
+    left:-30px;
+    height: 100%;
+}
+
+.middle {
+    flex: 2;
+}
+
+.right {
+    flex: 1;
+   background-color: aqua;
+}
+
+
+.first {
+    display:flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.371);
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-top: 1px solid lightgray;
+    margin: 10px;
+    
+}
+
+.sec{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    max-width: 500px;
+    margin: 10px;
+    justify-content: space-between;
+}  
+      
+.sec > div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    padding-top: 5px;  
+}
+
+.third{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: DodgerBlue;
+    max-width: 500px;
+    margin: 10px;
+    justify-content: space-between;
+}  
+      
+.third > div {
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    padding-top: 5px;  
+}
+
+.four{
+    display:flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.371);
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    height: 50px;
+    border-top: 1px solid lightgray;
+    margin: 10px;
+    
+}
+
+.all{
+    margin-left: 30%;
+    margin-top: 10%;
+}

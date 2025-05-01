@@ -1,0 +1,84 @@
+.enter{
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 2% 5% 5% 2%;
+    padding: 1%;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.E4IJcali_762Oo_vNhhbFgHaEK&pid=Api&P=0&h=180");
+    opacity: 0.8;
+    text-align: center;
+}
+
+.enter h1{
+    color:rgb(149, 0, 255);
+    text-transform: uppercase;
+}
+
+.enter button{
+    background-color: skyblue;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.start {
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.oXTVeTL0KCqDbRq6e_hmWwHaEo&pid=Api");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    width: 500px;
+}
+
+.start h1{
+    color: rgb(215, 247, 250);
+    text-align: center;
+}
+
+.mid div{
+    justify-items: center;
+}
+
+.mid {
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/images1/Moon-hd-resolution-For-Desktop-Wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 200px;
+    width: 500px;
+}
+
+.mid h1{
+    color: blanchedalmond;
+    text-align: center;
+}
+
+.detail{
+    justify-items: center;
+    align-items: center;
+}
+
+.end{
+    border : 3px dashed black;
+    text-align:center;
+}
+
+input::placeholder{
+    color:aqua;
+    opacity: 0.8;
+    text-align: center;
+    justify-items: center;
+    font-size: 16px;
+}
+
+.end h1{
+    color: orangered;
+}
+
+.end button{
+    background-color:black;
+    color: aliceblue;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
