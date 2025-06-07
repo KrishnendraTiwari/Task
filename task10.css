@@ -51,7 +51,7 @@ body {
 .first {
     display:flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.371);
+    background-color: rgba(205, 61, 61, 0.371);
     position: relative;
     width: 100%;
     max-width: 500px;
