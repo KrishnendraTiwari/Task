@@ -1,0 +1,31 @@
+.container{
+    display: grid;
+    grid-template-columns:50px 50px 50px 50px;
+    gap: 20px;
+    background-color: gray;
+    justify-content: center;
+    height: 50%;
+    width: 20%;
+    margin: 5%;
+    margin-left: 40%
+}
+
+.container > div {
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 30px;
+    background-color: rgba(255, 255, 255, 0.856);
+    text-align: center;
+
+}
+
+h1{
+    color: rgb(42, 165, 147);
+    text-align: center;
+}
+
+
+.eqbtn{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
