@@ -1,6 +1,7 @@
 .container{
     display: grid;
     height: 500px;
+    gap: 20px;
     place-content: center;
 }
 
@@ -8,4 +9,8 @@
     display: grid;
     grid-row: 1;
     width: 200px;
+}
+/*remove underline from anchor tag*/
+a{
+    text-decoration: none;
 }

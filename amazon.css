@@ -1,0 +1,201 @@
+
+/*first Header */
+.head{
+    display: grid;
+    position:sticky;
+    grid-template-columns:50px 150px 400px 50px 350px 80px ;
+    gap: 60px;
+    border: 1px solid black;
+    background-color:black;
+    width: 99.9%;
+    height: 100px;
+    top: 00px;
+}
+
+/*header items*/
+.head > div{
+    padding-top: 35px;
+    font-family:arial;
+
+}
+
+/*location icon*/
+.location{
+    padding-left: 70px;
+    padding-top: 10px;
+    width: 200px;
+}
+
+/*amazon image in header*/
+.amzimg{
+    padding: 35px;
+    height: 50px;
+    width: 100px;
+    
+}
+
+/*Search bar*/
+.search{
+    display: flex;
+    padding-left:100px;
+}
+
+/*Search bar icon*/
+.icon{
+    height: 30px;
+    width: 25px;
+    text-align: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+/*indian flag image and EN*/
+.container{
+    display: flex;
+    padding: 22px;
+    padding-left: 15px;
+
+}
+
+/*flag img  */
+.flag{
+    padding-top: 8px;
+    height: 40px;
+    width: 40px;
+}
+
+/*sigin and order */
+
+.anchor{
+    display: flex;
+    padding-left: 25px;
+}
+
+/*second header*/
+.head2{
+    display: grid;
+    grid-template-columns: 80px 100px 50px 100px 70px 100px 80px 130px 80px 100px 100px;
+    border: 1px solid gray;
+    background-color:gray;
+    width: 99.9%;
+    height: 40px; 
+    gap: 20px;
+    
+} 
+
+/*second header items*/
+.head2 > div {
+ color: white;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+/*using multiple colors in background*/
+body {
+  width: 99.9%;
+  height: 800px;
+  background-image:
+  linear-gradient(to right, rgb(191 198 205 / 40%), rgb(111 191 238 / 50));
+  
+}
+
+/*this class is used to containing Image and paragraph*/
+.advertisment{
+    display: flex;
+}
+
+/*this class is used for levi's & lakme image*/
+.offer{
+    padding-left: 400px;
+    padding-top: 50px;
+}
+
+/*this class is used for clothes img*/
+.ads{
+    height: 300px;
+    padding-left: 50px;
+
+}
+
+
+.Appliances1{
+    display: grid;
+    background-color: rgb(177, 182, 186);
+    grid-template-columns: 350px 380px 350px 350px;
+    gap: 20px;
+    
+}
+
+.Appliances1 > div{
+    display: grid;
+    background-color: aliceblue;
+    height: 500px;
+    
+    padding-left: 10px;
+}
+
+#one{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 20px;
+}
+
+#two{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 30px;
+}
+
+#three{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}
+
+#four{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}
+
+#five{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}
+
+#six{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}
+
+ 
+#seven{
+    width: 350px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}
+
+#eight{
+    width: 400px;
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 150px 150px ;
+    padding-left: 10px;
+}

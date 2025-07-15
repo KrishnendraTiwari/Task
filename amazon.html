@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="amazon.css">
+    <!--linking icons from font awesome web site-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Amazon Clone</title>
+</head>
+<body>
+    <!--header -->
+        <div class="head">
+
+            <!--amazon Image-->
+            <img class="amzimg" src="https://wallpapers.com/images/hd/amazon-logo-black-background-xb9pdemosnjfz9ej.jpg">
+
+            <!--Location icon-->
+            <div class="location">
+                <i class="fa-solid fa-location-dot" style="color:white;"></i>
+                <p style="display: inline; color: aliceblue;">Delivering to Prayagraj<br>Update Location</p>
+            </div>
+
+            <!--Search bar-->
+            <div>
+                <form>
+                    <div class="search">
+                        <select id="categories" name="categories" style="width: 50px; height: 30px;">
+                            <option value="all">All</option>
+                            <option value="2">Alexa Skills</option>
+                            <option value="3">Amazon Devices</option>
+                            <option value="4">Amazon Fashion</option>
+                            <option value="5">Amazon Pharmacy</option>
+                            <option value="6">Appliances</option>
+                            <option value="7">Apps & Games</option>
+                            <option value="8">Books</option>
+                            <input type="text" placeholder="Search Amazon.in" name="search" style="display: inline; width: 400px; ">
+                            <!--search bar icon-->
+                            <i class="icon fa-solid fa-magnifying-glass" style="color:rgb(10, 10, 10); background-color:orange;"></i>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <!--india flag image-->
+            <span class="container">
+                <img class="flag" src="https://cdn1.iconfinder.com/data/icons/flags-36/512/India_Country_flag-512.png">
+                &nbsp; &nbsp;
+                <p style="color: rgb(248, 248, 251); display: inline;">EN</p>
+            </span>
+
+            <div class="anchor">
+                <a href="www.amazon.in" style="text-decoration: none; color: aliceblue;">Hello, sign in <br><b>Account & list</b></a>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;
+                <a href="www.amazon.in" style="text-decoration: none; color: aliceblue;">Returns<br><b>& Order</b></a>
+            </div>
+                
+
+            <!--Cart logo-->
+            <div>
+                <i class="fa-solid fa-cart-shopping" style="color:white;"></i>
+                <p style="color: rgb(248, 248, 251); display: inline;">Cart</p>
+            </div> 
+        </div>
+
+        <!--second header-->
+        <div class="head2">
+            <div><i class="fa-solid fa-bars"></i><p style="display: inline;">All</p></div>
+            <div>MX Player</div>
+            <div>Sell</div>
+            <div>Bestsellers</div>
+            <div>Mobiles</div>
+            <div>Today's Deals</div>
+            <div>Prime</div>
+            <div>Customer Services</div>
+            <div>Fashion</div>
+            <div>New Releases</div>
+            <div>Amazon Pay</div>
+        </div>
+        <div class="advertisment">
+            <div class="offer">
+                <h2>Up to 60% off</h2>
+                <p style="font-size: 18px;">Offers on clothing, beauty products & more</p>
+                <!--levi's img-->
+                <img style="height: 50px; width: 70px; " src="https://logos-world.net/wp-content/uploads/2020/04/Levis-Logo.png">
+                <!--Lakme img-->
+                <img style="height: 45px; width: 90px; padding-left: 10px;" src="https://tse1.mm.bing.net/th?id=OIP.GiviJjttzuTFHx6nuo0KUwHaBf&pid=Api&P=0&h=180">  & More
+            </div>
+            <!--clothes image-->
+            <img class="ads" src="https://thumbs.dreamstime.com/b/fashion-summer-women-clothes-set-cosmetics-accessories-flat-lay-top-view-91902924.jpg">
+        </div>
+        <!--multiples items list like home, books, electronic, toys -->
+        <div class="Appliances1">
+            <div>
+                <h3>Appliances for your home | Up to 55% off</h3>
+                <span id="one">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08RDL6H79._SY116_CB667322346_.jpg">
+                        Air conditioners
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B08345R1ZW._SY116_CB667322346_.jpg">
+                        Refrigerators
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/Appliances-QC-PC-186x116--B07G5J5FYP._SY116_CB667322346_.jpg">
+                        Microwaves
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/GATEWAY/MSO/186x116---wm._SY116_CB667322346_.jpg"> 
+                        Washing machines
+                    </p>
+                    <a  href="www.amazon.in">See more</a> 
+                </span>
+            </div>
+            <div>
+                <h3 style="width: 380px;">Playtation 5 Slims & Accessories|No Cost EMI</h3>
+                <span id="two">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-4--1x._SY116_CB793233792_.jpg">
+                        PS5 Slim digital edition
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-3--1x._SY116_CB793233792_.jpg">
+                        PS5 Slim disc edition
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-1--1x._SY116_CB793233792_.jpg">
+                        PS5 Slim Fortnite digital edition 
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/VG/Nanditha/BI/QC-6--1x._SY116_CB793243872_.jpg"> 
+                        PS5 DualSense Wireless Controller
+                    </p>
+                    <a  href="www.amazon.in">See more</a> 
+                </span>
+            </div>
+            <div>
+                <h3>Revamp your home in style</h3>
+                <span id="three">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_furnishings_2._SY116_CB555624324_.jpg">
+                        Cushion covers, bedsheets & more
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_decor_1._SY116_CB555624324_.jpg">
+                        Figurines, vases & more
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_storage_1._SY116_CB555624324_.jpg">
+                        Home storage
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG20/Home/2024/Gateway/BTFGW/PCQC/New/1x/final/186x116_Home_lighting_2._SY116_CB555624324_.jpg"> 
+                        Lighting solutions
+                    </p>
+                    <a  href="www.amazon.in">Explore all</a>
+            </div>
+            <div>
+                <h3>Sarting <i class="fa-solid fa-indian-rupee-sign"></i>149 Headphones</h3>
+                <span id="four">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_boAt_0.5x._SY116_CB553870684_.jpg">
+                        Starting <i class="fa-solid fa-indian-rupee-sign"></i>249 | boAt
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Boult_0.5x._SY116_CB553870684_.jpg">
+                        Starting <i class="fa-solid fa-indian-rupee-sign"></i>349 | boult
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/GW/QC/PC/PC_QuadCard_Noise_0.5x._SY116_CB553870684_.jpg">
+                        Starting <i class="fa-solid fa-indian-rupee-sign"></i>649 | Noise
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/june/CE/MSO/PD3/PC_QuadCard_Zeb_0.5x_1._SY116_CB570220221_.jpg"> 
+                        Starting <i class="fa-solid fa-indian-rupee-sign"></i>149 | Zebronics
+                    </p>
+                    <a  href="www.amazon.in">See all offers</a>
+            </div>
+            <div>
+                <h3>Automotive essentials | Up to 60% off</h3>
+                <span id="five">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Glasscare1X._SY116_CB410830553_.jpg">
+                        Cleaning accessories
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Rim_tyrecare1x._SY116_CB410830552_.jpg">
+                        Tyre & rim care
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vega_helmet_186x116._SY116_CB405090404_.jpg">
+                        Helmets
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img17/Auto/2020/GW/PCQC/Vaccum1x._SY116_CB410830552_.jpg"> 
+                        vacuum cleaner
+                    </p>
+                    <a  href="www.amazon.in">See more</a>
+            </div>
+            <div>
+                <h3>Under<i class="fa-solid fa-indian-rupee-sign"></i>499 | Deals on home improvement...</h3>
+                <span id="six">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wipes_low_res_V1._SY116_CB549138744_.jpg">
+                        Under <i class="fa-solid fa-indian-rupee-sign"></i>199 | Cleaning  supplies 
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Shower_heads_low_res_V1._SY116_CB549138744_.jpg">
+                        Under <i class="fa-solid fa-indian-rupee-sign"></i>399 | Bathroom accessories
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Tools_low_res_V1._SY116_CB549138744_.jpg">
+                        Under <i class="fa-solid fa-indian-rupee-sign"></i>499 | Home tools
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img18/HomeImprovement/harsmisc/2025/March/Wallpapers_low_res_V1._SY116_CB549138744_.jpg"> 
+                        Under <i class="fa-solid fa-indian-rupee-sign"></i>299 | wallpapers
+                    </p>
+                    <a  href="www.amazon.in">Explore all</a>
+            </div>
+            <div>
+                <h3>Min. 40% off | Fun toys for little ones | Amazon brand</h3>
+                <span id="seven">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/baby/QC_PC_186x116_9._SY116_CB563558900_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_13._SY116_CB541414575_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_11._SY116_CB541414575_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img21/AmazonBrands/GW_CPB_/QC_CC/Baby_toys/toys/QC_PC_186x116_16._SY116_CB541411275_.jpg"> 
+                    
+                    </p>
+                    <a  href="www.amazon.in">See all offers</a>
+            </div>
+            <div>
+                <h3>Starting <i class="fa-solid fa-indian-rupee-sign"></i>199 | Amazon Brands & more</h3>
+                <span id="eight">
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_2._SY116_CB567468236_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_3._SY116_CB567468236_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_4._SY116_CB567468236_.jpg">
+                        
+                    </p>
+                    <p>
+                        <img style="width: 150px;" src="https://images-eu.ssl-images-amazon.com/images/G/31/img23/PB/March/Bikram/PC_QC_HOME_SIZE_186_1._SY116_CB567468236_.jpg"> 
+                    
+                    </p>
+                    <a  href="www.amazon.in">See more</a>
+            </div>
+        </div>
+        
+</body>
+</html>
