@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+   
+    
+</head>
+<body>
+     
+    <h2>First three elements from array </h2>
+    
+    <ul id="output"></ul>
+    
+   
+    <script>
+    //showing first 3 elements in an array in UI
+
+    const arr2 = ["HTML", "CSS", "JAVASCRIPT", "REACTjs", "C++"];
+
+    const firstThree = arr2.slice(0, 3); // Get first 3 elements
+    const output = document.getElementById("output");
+
+    firstThree.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = item;
+      output.appendChild(li);
+    });
+    </script>
+</body>
+</html>

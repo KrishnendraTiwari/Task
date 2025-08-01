@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <title>Todos</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!--parent-->
+    <div class="d-flex flex-column align-items-center">
+
+        <h1>Todos App</h1>
+        
+
+        <!--child-->
+        <div>
+            
+            <input type="text" id="todos-input" placeholder="Enter the title" >
+
+            <button class="btn btn-primary ms-4" onclick="addtodos()">Add</button>
+        </div>
+
+        <ul class="mt-3" id="todocontainer">
+        <!-- 
+            <li>
+                <input type="checkbox">
+
+                <span></span>
+
+                <button class="btn btn-warning">Edit</button>
+
+                <button class="btn btn-danger">Delete</button> 
+ 
+            </li> -->
+
+        </ul>
+
+    </div>
+
+
+    <script> 
+
+        const ulTag = document.getElementById('todocontainer');
+
+        const input = document.getElementById('todos-input');
+
+        // state-management ---- how the data is storing
+
+        // to convert JSON to javascript object -- we are uesing JSON.parse
+
+        let todosData = JSON.parse(localStorage.getItem('todos')) || [] 
+
+        
+
+        function printtodos() {
+
+            ulTag.innerHTML=''; //to clear the html because without clear we will cause the duplicates
+            /* creating the new li for each object */
+
+            todosData.forEach((element,index) => {
+                
+                const liTag = document.createElement('li');
+                
+                liTag.innerHTML = `<input type="checkbox" ${element.completed ? 'checked': ''} onchange="toggleinput(${index})" >
+
+                <span class="${element.completed ? "text-decoration-line-through" : "" }"> ${element.todo}</span>
+
+                <button class="btn btn-warning" onclick="editTodo(${index})">Edit</button>
+
+                <button class="btn btn-danger" onclick="deleteTodo(${index})">Delete</button>`
+
+                ulTag.appendChild(liTag);
+    
+            });
+
+        }
+
+        // to add the data in localStorage
+
+        // json - javascript object notaion - it is not limited to js - it is universal like js,python,java
+
+        // javascript object -- key does not have in quotations (double / single quotes)
+
+        // json -- keys have the quotations   syntax-- in the form odf object {"keys":"values"}
+
+        function addToLocalStorage(){
+
+            // JSON.stringify -- it will covert the javascript object to JSON 
+            localStorage.setItem('todos',JSON.stringify(todosData))
+        }
+
+        /*  pushing the title in to todo array and calling addToLocalStorage()
+         to update todos in the localstorage and printtodos(); to update the todos in the html webpage */
+
+        function addtodos() {
+            //spaces can not add in todos
+                if(input.value.trim() === '')
+            return;
+
+            todosData.push(
+                {
+                    id : Date.now(),
+                    todo : input.value,  
+                    completed : false
+                }
+            )
+
+            addToLocalStorage()
+            
+            printtodos()
+
+            input.value = ''; // clear input after adding
+
+        }
+
+        function deleteTodo(index){
+
+                // method 1 for deleting data 
+                todosData.splice(index,1)
+
+                /* method 2 for deleting data ----------
+                let newTodo = todosData.filter((ele,i) => i !== index);
+                todosData = newTodo */
+
+
+                printtodos() //it will clear the all li tags and it will directly create li tags and it was refreshed the entire todos
+
+                addToLocalStorage() // deleting data from local storage
+            }
+
+        
+
+         function toggleinput(position) {
+
+            console.log(position,'pos') // it shows in which index your are click in console screen
+
+            todosData[position].completed = !todosData[position].completed //it is used to change the value if your task is completed it shows true not completed the it shows false.
+
+            console.log(todosData[position],"clicked") // it shows what are the data in which index you clicked 
+
+            printtodos() // we call the function for update the data in local storage
+
+        } 
+
+        function editTodo(position){
+            console.log(todosData[position],"edit button clicked")
+
+            const newTodo = prompt("Edit your todo :",todosData[position].todo);
+
+            // Check if newTodo is not null (Cancel wasn't clicked) and not empty after trimming
+            if (newTodo !== null && newTodo.trim() !== "") {
+                todosData[position].todo = newTodo.trim(); // optional: use trim to remove leading/trailing spaces
+                addToLocalStorage();
+                printtodos();
+            }
+
+        }
+        printtodos()
+        
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="divTag">
+        <h2> write function to generate random background color of body (hint:
+ Math.random())</h2>
+    </div>
+    
+
+    <script>
+        const divTag = document.getElementById('divTag');
+
+        
+        let r = Math.ceil(255 * Math.random())
+        let g = Math.ceil(255 * Math.random())
+        let b = Math.ceil(255 * Math.random())
+        divTag.style.backgroundColor = `rgb(${r},${g},${b})`
+    </script>
+</body>
+</html>
