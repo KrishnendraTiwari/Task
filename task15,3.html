@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0%;
+        padding: 0%; 
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height:100vh;
+        background-color: aqua;
+    }
+
+    .container{
+        background-color: aliceblue;
+        padding:2rem;
+        border-radius: 20px;
+    }
+
+    .form{
+        margin:2rem 0 1rem 0;
+    }
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+    }
+    input{
+        
+        height: 30px;
+        margin-left: 20px;
+        padding-left: 10px;
+    }
+
+    button{
+        margin: 10px;
+        margin-left: 115px;
+        padding: 0.75rem;
+        width: 50%;
+        border-radius: 10px;
+        background-color: rgb(255, 212, 127);
+        font-size: 1.5rem;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        cursor: pointer;
+    }
+    label{
+        font-size: large;
+    }
+
+</style>
+<body>
+    <div class="container">
+
+        <h2>Complex Interest Calculator</h2>
+        <div class="form">
+            <label for="principal">Principal (P):</label>
+            <input type="number" id="principal"  placeholder="Enter principal">
+            <br><br>
+            <label for="rate">Rate (R):</label>
+            <input type="number" id="rate" style="margin-left: 50px;" placeholder="Enter Rate ">
+            <br><br>
+            <label for="time">Time (T):</label>
+            <input type="number" id="time" style="margin-left: 45px;"  placeholder="Enter time ">
+            <br><br>
+            <button onclick="calculate()">Calculate</button>
+            <br><br>
+            <h3 id="result"> </h3>
+        </div>
+    </div>
+    
+
+    <script>
+        
+        function calculate() {
+            var p = parseFloat(document.getElementById("principal").value);
+            var r = parseFloat(document.getElementById("rate").value);
+            var t = parseFloat(document.getElementById("time").value);
+
+            p = Number(p);
+            r = Number(r);
+            t = Number(t);
+
+      
+            if (p > 0 && r > 0 && t > 0) {
+                var interest = ((p / r) * t) / 100;
+                document.getElementById("result").innerText = "Answer = " + interest.toFixed(2);
+            } 
+            else {
+                alert("All fields must be greater than 0");
+            }
+        }
+
+    </script>
+</body>
+</html>
