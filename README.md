@@ -1,3 +1,3 @@
 # Task
 
-This is html and css task using all the concepts of html & css
+This is frontend tasks  using html , css and javascript.
